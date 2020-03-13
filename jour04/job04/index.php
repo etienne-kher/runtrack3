@@ -10,6 +10,14 @@
 	<script  type="text/javascript" src="script.js" async="true"></script>
 </head>
 <body>
-	
+	<table>
+		<tr>
+			<th>id</th>
+			<th>nom</th>
+			<th>prenom</th>
+			<th>email</th>
+		</tr>
+	</table>
+	<button>update</button>
 </body>
 </html>

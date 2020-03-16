@@ -9,8 +9,8 @@ if(ins==true)
 		psw=$("#psw").val();
 		repsw=$("#repsw").val();
 		if(psw==repsw)
-		{	$('#err').remove();
-			console.log("oui");
+		{	
+			$('#err').remove();
 		}
 		else
 		{	$('#err').remove();
@@ -21,11 +21,28 @@ if(ins==true)
 	$('#psw').keyup(testmdp);
 	$('#repsw').keyup(testmdp);	
 	
-	//algo pour inscription
-
 	//verifier email existant et bon format
-
-	//verif mdp=remdp
+	function testmail(email) 
+	{
+			console.log("test");
+			/*
+ 			
+*/
+  	}
+  	
+	$('#email').keydown(function()
+		{
+			mail=$('#email').val()
+			var regex = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+ 			  if(!regex.test(mail)) 
+ 			 {
+  				console.log(false);
+  			 }
+  			  else
+  			 {
+    			console.log(true);
+  			 }
+		});
 	
 }
 
